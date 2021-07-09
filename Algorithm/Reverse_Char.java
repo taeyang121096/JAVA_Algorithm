@@ -1,5 +1,5 @@
 import java.util.*;
-
+/// 단어 뒤집기
 public class Reverse_Char {
 	
 	public ArrayList<String> solution(int n, String[] str) {

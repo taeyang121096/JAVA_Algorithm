@@ -1,5 +1,5 @@
 import java.util.*;
-// 문자 찾기
+/// 문자 찾기
 public class Char_Find {
 	public int solution(String str, char t) {
 		int answer = 0;
