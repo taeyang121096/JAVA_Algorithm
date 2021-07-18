@@ -4,21 +4,18 @@ import java.util.*;
 
 public class Rank {
 
-    public ArrayList<Integer> solution(int n, ArrayList<Integer> score) {
-        ArrayList<Integer> ans = new ArrayList<>();
-        Collections.sort(score,Collections.reverseOrder());
-        int rank = 1, count = 1;
-        ans.add(rank);
-        for (int i = 1; i < n; i++) {
-            if (score.get(i-1) == score.get(i)) {
-                count++;
-                ans.add(rank);
-            } else {
-                rank += count;
-                count = 1;
-                ans.add(rank);
-            }
+    public int [] solution(int n, int[] score) {
+        int[] ans = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            int rank = 1;
+            for (int j = 0; j < n; j++) {
+                if (score[j] > score[i]){
+                    rank ++;
+                }
 
+            }
+            ans[i] = rank;
         }
 
         return ans;
@@ -28,10 +25,10 @@ public class Rank {
         Rank r = new Rank();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        ArrayList<Integer> score = new ArrayList<>();
+        int[] score = new int[n];
 
         for (int i = 0; i < n; i++) {
-            score.add(sc.nextInt());
+            score[i] = sc.nextInt();
         }
         for (int x : r.solution(n, score)) {
             System.out.print(x + " ");
