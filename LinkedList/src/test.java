@@ -4,8 +4,8 @@ public class test {
 
     public static void main(String[] args) {
 
-        String s = "abdfdf";
-        System.out.print(s[0]);
+        int c = 'A';
+        System.out.print(c);
     }
 
 }
