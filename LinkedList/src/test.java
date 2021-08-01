@@ -1,16 +1,22 @@
 import java.util.*;
 
+import jdk.internal.jshell.tool.resources.l10n;
+
 public class test {
 
     public static void main(String[] args) {
-        int[]arr = new int[3];
-        arr[0] = 1;
-        arr[2] = 2;
+        
+        int[] arr = {1,3,2,4};
 
+        for(int i: arr) System.out.print(i+" ");
+        System.out.println();
 
-        for(int i : arr){
-            System.out.print(i);
-        }
+        Arrays.sort(arr);
+        
+        for(int i: arr) System.out.print(i+" ");
+        System.out.println();
+
+        System.out.print(Arrays.asList(arr).indexOf(3));
         
     }
 
