@@ -1,4 +1,4 @@
-# Coding_Study_Java
+# JAVA
 
 1. **Linked_LIst** -> one way linked list && no duplicate list
 2. **문자열에서 문자 찾기**.     
