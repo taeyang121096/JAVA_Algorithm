@@ -22,5 +22,6 @@ public class MethodRef {
 
         Arrays.sort(names, String::compareToIgnoreCase);
         System.out.println(Arrays.toString(names));
+
     }
 }
